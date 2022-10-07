@@ -1,0 +1,29 @@
+.container{
+    height: 400px;
+    width: 400px;
+}
+#circle1{
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    position: relative;
+}
+#circle2{
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+#circle3{
+    background-color: green;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}

@@ -1,0 +1,24 @@
+<div class="container">
+    <h3>Enter Currency Information Here.</h3>
+    <form #currencyForm="ngForm" (ngSubmit)="onSubmit(currencyForm)">
+        <div class="form-group">
+            <label for="from">From:</label>
+            <select name="from" id="from" class="form-control" ngModel>
+                <option *ngFor="let currency of currencies">{{ currency }}</option>
+            </select>
+        </div>
+        <div class="form-group"> 
+            <label for="to">To:</label>
+            <select name="to" id="to" class="form-control" ngModel>
+                <option *ngFor="let currency of currencies">{{ currency }}</option>
+            </select>
+        </div><br>
+        <div class="form-group">
+            <label for="amount">Enter Amount:</label>
+            <input type="text" name="amount" id="amount" class="form-control" ngModel>
+        </div><br>
+        
+        <input type="submit" class="btn btn-primary" value="Convert"><br>
+        <app-result [Result]="result"></app-result>
+    </form>
+</div>

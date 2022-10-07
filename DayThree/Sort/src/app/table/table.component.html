@@ -1,0 +1,13 @@
+<div>
+    <br>
+    <table border="2">
+        <thead>
+            <th>Name</th>
+            <th>Birth Date</th>
+        </thead>
+        <tr *ngFor="let data of textdata">
+            <td>{{ data.firstName  + " " + data.lastName}}</td>
+            <td>{{ data.birthDate }}</td>
+        </tr>
+    </table>
+</div>

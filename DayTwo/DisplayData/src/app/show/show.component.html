@@ -1,0 +1,17 @@
+<div *ngIf="isClicked">
+    <br>
+    <table>
+        <thead>
+            <th>User ID</th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Body</th>
+        </thead>
+        <tr *ngFor="let data of textData">
+            <td>{{ data.userId }}</td>
+            <td>{{ data.id }}</td>
+            <td>{{ data.title }}</td>
+            <td>{{ data.body }}</td>
+        </tr>
+    </table>
+</div>
